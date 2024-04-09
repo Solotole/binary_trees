@@ -2,7 +2,7 @@
 
 /**
  * counting_leaves - function to count leaves
- * root: tree's node to count leaves from
+ * @root: tree's node to count leaves from
  *
  * Return: return 0 if root is NULL and leaves count otherwise
  */
