@@ -4,7 +4,6 @@
  * a binary tree
  * @tree: pointer to the root node of the tree to count
  * the number of leaves
- *
  * Return: return 0 if tree is NULL or count of leaves
  * otherwise
  */
