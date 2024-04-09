@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+
 /**
  * in_order - function to carry out in order binary tree traversal
  * @node: tree to be traversed
@@ -14,7 +15,8 @@ void in_order(const binary_tree_t *node, void (*func)(int))
 }
 
 /**
- * binary_tree_inorder - function that goes through a binary tree using in-order traversal
+ * binary_tree_inorder - function that goes through
+ * a binary tree using in-order traversal
  * @tree: tree to be traversed
  * @func: function to print out output node's values
  */
