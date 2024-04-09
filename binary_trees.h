@@ -41,5 +41,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree);
 void pre_order(const binary_tree_t *root, void (*func)(int));
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 void in_order(const binary_tree_t *node, void (*func)(int));
+void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
+void post_order(const binary_tree_t *node, void (*func)(int));
 
 #endif /* _BINARY_TREES_H_ */
