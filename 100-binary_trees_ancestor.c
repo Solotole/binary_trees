@@ -33,7 +33,9 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 	int i, j, height1, height2;
 	binary_tree_t *ancestor1[100], *ancestor2[100];
 
-	if (!first || !second)
+	if (!first)
+		return (NULL);
+	if (!second)
 		return (NULL);
 	height1 = find_ancestors(first, ancestor1);
 	height2 = find_ancestors(second, ancestor2);
