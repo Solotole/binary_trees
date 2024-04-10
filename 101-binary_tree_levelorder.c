@@ -43,7 +43,7 @@ void level_order_traversal(const binary_tree_t *node, int i, void (*func)(int))
  * binary_tree_levelorder - function that goes through a
  * binary tree using level-order traversal
  * @tree: root node of the tree
- * :func: pointer to a function that prints node;s value
+ * @func: pointer to a function that prints node;s value
  */
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
