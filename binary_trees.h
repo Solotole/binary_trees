@@ -43,5 +43,8 @@ void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 void in_order(const binary_tree_t *node, void (*func)(int));
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
 void post_order(const binary_tree_t *node, void (*func)(int));
+void post_order_delete(binary_tree_t *node);
+int binary_tree_balance(const binary_tree_t *tree);
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
 
 #endif /* _BINARY_TREES_H_ */
