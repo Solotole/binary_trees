@@ -31,6 +31,8 @@ void level_order_traversal(const binary_tree_t *node, int i, void (*func)(int))
 {
 	if (node == NULL)
 		return;
+	if (!func)
+		return;
 	if (i == 0)
 		func(node->n);
 	else
@@ -49,6 +51,10 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
 	int height, i = 0;
 
+	if (!tree)
+		return (NULL);
+	if (!func)
+		return (NULL);
 	height = node_height(tree);
 	while (i < height)
 	{
