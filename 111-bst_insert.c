@@ -11,6 +11,7 @@
 bst_t *bst_insert(bst_t **tree, int value)
 {
 	bst_t *solo;
+	bool boolean = true;
 
 	if (!tree)
 		return (NULL);
@@ -20,9 +21,9 @@ bst_t *bst_insert(bst_t **tree, int value)
 		*tree = solo;
 		return (solo);
 	}
-	if (value < (*tree)->n)
+	if (value < (*tree)->n && boolean)
 	{
-		if ((*tree)->left == NULL)
+		if ((*tree)->left == NULL && boolean)
 		{
 			solo = binary_tree_node(*tree, value);
 			(*tree)->left = solo;
@@ -31,9 +32,9 @@ bst_t *bst_insert(bst_t **tree, int value)
 		else
 			return (bst_insert(&((*tree)->left), value));
 	}
-	else if (value > (*tree)->n)
+	else if (value > (*tree)->n && boolean)
 	{
-		if ((*tree)->right == NULL)
+		if ((*tree)->right == NULL && boolean)
 		{
 			solo = binary_tree_node(*tree, value);
 			(*tree)->right = solo;
