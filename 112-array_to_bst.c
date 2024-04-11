@@ -18,8 +18,8 @@ bst_t *array_to_bst(int *array, size_t size)
 	while (j < size)
 	{
 		node = bst_insert(&root_node, *(array + j));
-		if (node->parent == NULL)
-			root_node = node;
+		if (node == NULL)
+			return (NULL);
 		j++;
 	}
 	return (root_node);
