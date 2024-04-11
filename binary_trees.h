@@ -46,6 +46,7 @@ void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 void in_order(const binary_tree_t *node, void (*func)(int));
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
 bst_t *array_to_bst(int *array, size_t size);
+bst_t *bst_search(const bst_t *tree, int value);
 void post_order(const binary_tree_t *node, void (*func)(int));
 void post_order_delete(binary_tree_t *node);
 int binary_tree_balance(const binary_tree_t *tree);
