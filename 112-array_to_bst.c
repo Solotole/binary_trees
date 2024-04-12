@@ -13,7 +13,7 @@ bst_t *array_to_bst(int *array, size_t size)
 	bst_t *root_node = NULL, *node;
 	size_t j = 0;
 
-	if (array == NULL)
+	if (array == NULL || size == 0)
 		return (NULL);
 	while (j < size)
 	{
